@@ -18,8 +18,29 @@ body {
 .modal {
   background: white;
   width: 480px;
-  border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.inner-container {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 10;
+}
+
+.header {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.buttons {
+  margin: 5px;
 }
 
 .icon {
@@ -27,15 +48,18 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  flex-basis: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
+  margin: 5px;
 }
 
 .close-button {
+  margin: 5px;
   background: #eee;
   border-radius: 50%;
   color: #888;
